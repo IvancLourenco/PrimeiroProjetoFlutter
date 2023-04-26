@@ -6,15 +6,23 @@ void main(){
     title: "Projeto Container",
     home:Scaffold(
       appBar: AppBar(
-        title:Text("Exemplo Scaffold"),
-        backgroundColor: Colors.black, 
+        title: const Text("Exemplo Scaffold"),
+        backgroundColor: Colors.green, 
         ),
-        body: Container(
-          child: const Column(
-            children: [
-              Text("Teste de scaffold")
-            ],
-          ),
+        body: const Column(
+          children: [
+            Text("Teste de scaffold",
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.green,
+              letterSpacing: 0,
+              fontWeight: FontWeight.bold,
+              wordSpacing: 5,
+              decoration: TextDecoration.underline
+              
+              ),
+              )
+          ],
         ),
         )
 
